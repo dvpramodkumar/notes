@@ -1,0 +1,241 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.3in]{geometry}
+\usepackage{hyperref}
+%---------------------------------------
+\title{Basic Statistics}
+\author{Pramod Duvvuri}
+\date{February 26, 2019}
+\begin{document}
+\maketitle
+These are the basics in Statistics one must be familiar with if they aspire to become a \textit{Data Scientist}. This list will be including a mix of both Inferential and Descriptive Statistics. This list only covers \textit{Parametric Methods}. This list was prepared from reading the free online book \href{http://onlinestatbook.com}{Online Statistics Education} by \textbf{David Lane}. Learning all of these concepts theoretically is advisable before picking up a programming language to implement these concepts. One needs to know how a particular distribution looks like: Bernoulli, Binomial, Normal, Student-t. One could go study these distributions in more details if required as a pre-requisite for Machine Learning.
+%-------------- LIST BEGINS
+\begin{enumerate}
+	\item \textbf{Univariate Data}
+	\item Types of Sampling
+	\begin{enumerate}
+		\item Randomized Sampling
+	 \begin{enumerate}
+	 	\item Simple Random Sampling
+	 	\item Stratified Sampling 
+	 	\item Cluster Sampling
+	 \end{enumerate}
+       \item Non-Random Sample (Biased)
+       \begin{enumerate}
+       	\item Voluntary Sampling
+       	\item Convenience Sampling
+       \end{enumerate}
+    \end{enumerate}
+\item Bias from Sampling
+\begin{enumerate}
+	\item Response bias
+	\item Undercoverage
+	\item Convenience Bias
+	\item  Non-response Bias
+	\item Voluntary Response Bias
+\end{enumerate}
+\item Types of Variables/Data
+\begin{enumerate}
+	\item Qualitative (Categorical)
+	\begin{enumerate}
+		\item Nominal (No Order)
+		\item Ordinal (Order Matters)
+	\end{enumerate}
+	\item Quantitative (Numerical)
+		\begin{enumerate}
+		\item Continuos (Floating)
+		\item Discrete (Integer)
+	\end{enumerate}
+\item Interval
+\item Ratio
+\end{enumerate}
+\item Quantiles\\
+\textit{Definition:} The lines which divide data into equally sized groups
+\begin{enumerate}
+	\item Median
+	\item $q_1 , q_2, q_3$ (Quartiles)
+	\item Inter-Quartile Range (IQR)
+\end{enumerate}
+\newpage
+\item Percentiles\\
+\textit{Definition:} The quantiles which divide data into 100 equally sized groups
+\item Frequency Distribution
+\begin{enumerate}
+	\item Frequency Table
+	\item Dot Plot (1-Dimensional)
+	\item Histogram (Number of bins/buckets)
+	\item Range ( Maximum - Minimum)
+\end{enumerate}
+\item Statistical Distribution (Histogram/Curve)
+\item \textbf{Normal Distribution} (Gaussian Distribution): We need to know at least two of three parameters below to estimate/draw the curve.
+\begin{enumerate}
+	\item Mean ($\mu$)
+	\item Variance ($\sigma^2$)
+	\item Standard Deviation ($\sigma$)
+	\item Z-Score Calculation: Measure of how many sd's away each datapoint is from the mean ($ \mu $) \\
+	  Formula:
+	  $Z = \frac{X - \mu}{\sigma}$
+	  \item Standard Normal Distribution: A normal distribution with mean ($\mu$) equal to 0 and standard deviation ($\sigma$) equal to 1 is called a standard normal.
+\end{enumerate}
+\item Skewed Distributions (Shape of the Curve)
+\begin{enumerate}
+	\item Left Skewed (Negative Skew) : Longer Tail or thicker tail on the left side and ( Mean $<$ Median )
+	\item Right Skewed (Positive Skew) : Longer Tail or thicker tail on the right side ( Mean $>$ Median )
+	\item Bi-Modal (Two Peaks) : Two peaks in the curve
+\end{enumerate}
+\item Sampling a Distribution
+\item Data Transformations
+\begin{enumerate}
+	\item Linear Transformation
+	\item Logarithmic Transformation
+\end{enumerate}
+\item Plots:
+\begin{enumerate}
+	\item Box-Whisker Plot
+	\item Bar Charts
+	\item Line Graphs
+\end{enumerate}
+\item Mean(s):
+\begin{enumerate}
+	\item Arithmetic Mean (Standard Mean)
+	\item Geometric Mean
+	\item Harmonic Mean
+	\item Tri-Mean
+	\item Trimmed Mean (Mean after removing X\%  of data on both sides of the curve)
+\end{enumerate}
+\item Variability Measures:
+\begin{enumerate}
+	\item Index of Skew :  $ \frac{3 * ( Mean - Median )}{ \sigma }$ (Pearson's Formula)
+	\item Kurtosis
+\end{enumerate}
+\item QQ-Plots
+\item QQ-Line (R Only)
+\item Contour Plot (2D)
+\item Uniform Distribution
+\item \textbf{Central Limit Theorem (CLT)} (\href{http://onlinestatbook.com/2/sampling_distributions/clt_demo.html}{Simulation} helps you better understand this concept)
+\item Population vs Sample:
+\begin{enumerate}
+	\item Point Estimate
+	\item Sample Proportion ($\bar{p}$)
+	\item Mean ($\bar{x}$)
+	\item Variance (Sample Variance = ($ \frac{\sigma^2}{n} $))
+	\item Standard Deviation ($s$)
+	\item \textit{Standard Error}
+\end{enumerate}
+\item Theoretical vs Empirical Distribution
+\item Degrees of Freedom (DF)
+\item \textbf{Confidence Intervals (CI)}
+\begin{enumerate}
+	\item Upper Bound
+	\item Lower Bound
+	\item 95\% CI
+	\item 99\% CI (Wider than the 95\% CI)
+	\item Margin of Error ( 2 * Std Error)
+\end{enumerate}
+\item \textbf{t-distribution (student)} (Normal Distribution with df $ \to \infty$)
+\begin{enumerate}
+	\item t-statistic (score):\\
+	Formula: 
+	$T = \frac{ \bar{X} - \mu}{ \frac{s}{\sqrt{n}} }$
+	\item It has a lower peak and heavier tails implying more variance than the normal distribution and area of ($> 5\%$) in the tails combined
+	\item As df $\to \infty$ the peak increases and tends toward the normal curve but the area in the tails is more than the normal curve
+\end{enumerate}
+\item \textbf{Hypothesis Testing} (Significance Testing)
+\begin{enumerate}
+	\item Assumptions
+	\begin{enumerate}
+		\item Check Normality Assumption with qq-plot, approximately normal data is allowed but if the data is heavily skewed we cannot accept the null hypothesis ($H_0$)
+		\item Box-Plot to check means
+	\end{enumerate}
+	\item Null Hypothesis ($H_0$) 
+	\item Alternate Hypothesis ($H_1 | H_a$)
+	\item Test Statistic (Z/T)
+	\item p-value 
+	\item alpha ($\alpha$) (Significance Level)
+	\item Rejection Region (Tails)
+	\item 1-tail test
+	\item 2-tail test
+	\item Type-I (False Positive) and Type-II (False Negative) Errors
+	\item Power
+	\begin{enumerate}
+		\item \textit{Power} = ($1 - \beta$) ($\beta$ = Probability of Type-II Error)
+		\item ($\alpha + \beta = 1$) 
+	\end{enumerate}
+	\item Rough Guidelines:
+	\begin{enumerate}
+		\item $p < 0.01$ (Very Strong evidence against $H_0$)
+		\item $0.01 < p \leq 0.05$ (Strong evidence against $H_0$)
+		\item $p > 0.05$ (Weak evidence against $H_0$)
+		\item $p > 0.1$ (Very Weak evidence against $H_0$)
+	\end{enumerate}
+\end{enumerate} 
+\item \textbf{Bi-Variate Data}
+\begin{enumerate}
+	\item Population ($\rho$)
+	\item Sample ($r$)
+	\item Fisher's Z Transform ($z'$) \\
+	Formula:
+	$z' = 0.5 * ln(\frac{1 + r}{1 - r})  $ \\
+	Std Error = $\frac{1}{\sqrt{N - 3}}$
+\end{enumerate}
+\item \textbf{Hypothesis Testing (2-Sample/Population):}
+\begin{enumerate}
+	\item Assumptions
+	\item Types of Hypothesis Tesing:
+	\begin{enumerate}
+		\item Independent Sample t-test
+		\item Matched Sample t-test
+	\end{enumerate}
+	\item t-test or Welch's t-test (Welch is more robust)
+	\item Test Statistic Calculation
+\end{enumerate}
+\item \textbf{Trivariate/Multi-variate Data}
+\item \textbf{ANOVA}
+\begin{enumerate}
+	\item Assumptions
+	\item F-distribution
+	\item F-Statistic ($F = \frac{SSB}{SSW}$)
+	\item ANOVA table
+\end{enumerate}
+\item One-way ANOVA
+\begin{enumerate}
+	\item One dependent variable
+	\item One independent variable
+\end{enumerate}
+\item Factorial ANOVA (Two-way ANOVA)
+\begin{enumerate}
+	\item One dependent variable
+	\item One or more independent variable
+\end{enumerate}
+\item Effects of unequal samples
+\item Goodness of Fit
+\begin{enumerate}
+	\item Chi-Squared Test
+	\begin{enumerate}
+		\item Likelihood Ratio Test (G-Test)
+		\item Pearson's Chi-squared Test
+	\end{enumerate}
+    \item Test Statistic
+    \item $\chi^2$ Distribution
+\end{enumerate}
+\item Association
+\begin{enumerate}
+	\item Scatter Plot
+	\item Correlation (\href{http://guessthecorrelation.com/}{Here} is a \textbf{fun} game to test your understanding of this concept)
+	\item Correlation Test
+\end{enumerate}
+\item \textbf{Linear Regression}
+\begin{enumerate}
+	\item Assumptions
+	\item Simple Regression
+	\begin{enumerate}
+		\item Slope
+		\item Intercept
+		\item Regression Line
+		\item OLS
+	\end{enumerate}
+	\item Multiple Regression
+\end{enumerate}
+\end{enumerate}
+Before learning each method one must know the assumptions that are made. Most of the methods listed above are robust and can perform reasonably well on data that violate some of these assumption. However, the violation of these said assumptions can lead to poor performance and questionable results. The data in most scenarios can be approximately normal but if it is heavily skewed it is best to consider transforming this data. If transforming data is not helpful then it might be helpful to know some \textit{Non-Parametric Methods} which can then be used to test and make inferences.
+\end{document}
