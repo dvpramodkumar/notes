@@ -30,18 +30,18 @@
      \end{enumerate} 
     \item \textbf{Constraints}
     \begin{enumerate}
-    	\item Primary Key
-    	\item Foreign Key
     	\item Unique
     	\item Check
     	\item Not NULL
+    	\item Primary Key
+    	\item Foreign Key
     	\item Default
     \end{enumerate}
     \item AUTO-INCREMENT/IDENTITY
     \item \textbf{Queries}
     \begin{enumerate}
     	\item CREATE
-    	\item SELECT
+    	\item SELECT (SELECT INTO)
     	\item UPDATE
     	\item DELETE
     \end{enumerate}
@@ -63,28 +63,36 @@
     	\item COALESCE
     	\item ISNULL() or NVL()
     \end{enumerate}
+    \item GROUP BY \& HAVING
+    \item Aggregate Functions
+    \begin{enumerate}
+    	\item COUNT
+    	\item SUM
+    	\item MAX
+    	\item MIN
+    	\item AVG
+    \end{enumerate}
+   \item CASE Statement
     \item UNION ALL (Contains Duplicates)
     \item UNION (Slower)
     \item Joins vs UNION
-    \item INTERSECT
-    \item MINUS
 	\item Normalization (Normal Forms)
 	\begin{enumerate}
-		\item 1NF
-		\item 2NF
-		\item 3NF
+		\item 1NF (No comma separated values in a single column and no repeating columns and contains PK)
+		\item 2NF (1NF + no redundant data and connect tables with a FK)
+		\item 3NF (1NF + 2NF + remove columns not fully dependant on PK)
 		\item 4NF
 		\item 5NF
 		\item BCNF		
 	\end{enumerate}
 \item Indexes and Types
 \begin{enumerate}
-	\item Clustered
-	\item Non-Clustered
+	\item Clustered (Page Numbers)
+	\item Non-Clustered (Table of Contents)
 	\item Unique
 \end{enumerate}
 \item Cursor
-\item Views
+\item Views and Types 
 \item Triggers and Types
 \item Stored Procedure (SP)
 \begin{enumerate}
@@ -96,12 +104,27 @@
 	\item Local Temporary
 	\item Global Temporary
 \end{enumerate}
+\item Derived Table
 \item Common Table Expression (CTE)
 \item Sub-Queries
 \begin{enumerate}
 	\item Normal
 	\item Correlated
 \end{enumerate}
+\item String Functions (UPPER, LOWER)
+\item Datetime Functions
+\item MERGE
+ \item INTERSECT
+\item MINUS
+\item LOCKS
+\item EXCEPT
+\item Blocking Queries
+\item ROLLUP, CUBE. GROUPING SETS
+\item OVER
+\item PARTITION BY
+\item ROW\_NUMBER
+\item RANK
+\item DENSE\_RANK
 %--- MAIN 
 \end{enumerate}
 \end{document}
