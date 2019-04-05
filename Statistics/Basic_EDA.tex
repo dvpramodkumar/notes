@@ -17,10 +17,14 @@
 			\item Fitting
 		\end{enumerate}
 	    \item The need for EDA
-		\item \textbf{Univariate Data}
+		\item \textbf{Univariate Data} Single Measurement of a Quantitative Variable
 		\begin{enumerate}
 			\item Histogram
-			\item Density Plot
+			\begin{enumerate}
+				\item Number of Bins
+				\item Binwidth
+			\end{enumerate}
+			\item Density Plot (Frequency Polygon)
 			\item Boxplot
 			\item ECDF
 			\item Normal QQ Plot
@@ -37,9 +41,14 @@
 			\end{enumerate}
 		\item Spread Location Plot
 		\end{enumerate}
-	\item \textbf{Bivariate Data}
+	\item \textbf{Bivariate Data} - Paired Measurements of Two Quantitative Variables
 	\begin{enumerate}
 		\item Scatter Plot
+		\item loess curve (Parameters)
+		\begin{enumerate}
+			\item $\alpha$
+			\item $\lambda$
+		\end{enumerate}
 	\end{enumerate}
 	\end{enumerate}
 \newpage
@@ -60,5 +69,8 @@
  Line - geom_abline()
  QQ Plot - qqplot() \\ Base R function
  Flip Axes - coord_flip()
+ Picking Colors - color()
+ Details in Histogram - scale_x_continuous()/scale_y_continuous()
+ To Set Axis Limits - coord_cartesian()
 \end{verbatim}
 \end{document}	
