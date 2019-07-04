@@ -8,7 +8,7 @@ This repository contains supplementary notes on various topics such as *Statisti
 
 ## Programming
 
-1. [Basic SQL](https://github.com/dvpramodkumar/notes/blob/master/Others/Basic_SQL.pdf) - This contains the basics of SQL
+1. [Basic SQL](https://github.com/dvpramodkumar/notes/blob/master/SQL/Basic_SQL.pdf) - This contains the basics of SQL
 
 ## Statistics
 
