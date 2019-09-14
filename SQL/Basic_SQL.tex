@@ -33,6 +33,7 @@
     	\item Check
     	\item Not NULL
     	\item Primary Key
+    	\item Candidate Key
     	\item Foreign Key
     	\item Default
     \end{enumerate}
@@ -56,7 +57,7 @@
    		\item Full Outer 
    	\end{enumerate}
    \item Self Join
-   \item Cross Join
+   \item Cross Join - if where clause is present then it's an Inner Join otherwise a cartesian product is the result
    \end{enumerate}
     \item Handling NULL values
     \begin{enumerate}
@@ -86,15 +87,16 @@
 		\item 5NF
 		\item BCNF		
 	\end{enumerate}
-\item Indexes and Types
+\item \textbf{Indexes and Types}
 \begin{enumerate}
 	\item Clustered (Page Numbers)
 	\item Non-Clustered (Table of Contents)
 	\item Unique
+	\item View Indexes
 \end{enumerate}
 \item Cursor
 \item Views and Types 
-\item Triggers and Types
+\item Triggers (INSERT/UPDATE/DELETE)
 \item Stored Procedure (SP)
 \begin{enumerate}
 	\item System Generated
@@ -136,8 +138,7 @@
 \end{itemize}
 \item Database Partitioning vs Indexing
 \item OLTP vs OLAP
-\item Transactional Databases
-\item Data Warehouse \url{https://aws.amazon.com/data-warehouse/}
+%\item Data Warehouse \url{https://aws.amazon.com/data-warehouse/}
 \item \textbf{Schemas in DW}
 \begin{itemize}
 	\item STAR
