@@ -7,3 +7,9 @@ These are some of the resources which you can use to learn, practice and get bet
 2. [SQL Zoo](https://sqlzoo.net)
 
 3. [Mode Analytics SQL](https://mode.com/sql-tutorial/)
+
+
+## Practice Resources
+
+1. LeetCode
+2. HackerRank
