@@ -4,7 +4,7 @@ These are some of the resources which you can use to learn, practice and get bet
 
 1. [Stanford Databases Course](https://lagunita.stanford.edu/courses/DB/SQL/SelfPaced/course/)
 
-2. [CMU Inro to Database Systems Fall 2019](https://www.youtube.com/playlist?list=PLSE8ODhjZXjbohkNBWQs_otTrBTrjyohi)
+2. [CMU Intro to Database Systems Fall 2019](https://www.youtube.com/playlist?list=PLSE8ODhjZXjbohkNBWQs_otTrBTrjyohi)
 
 3. [CMU Advanced Database Systems Spring 2019](https://www.youtube.com/playlist?list=PLSE8ODhjZXja7K1hjZ01UTVDnGQdx5v5U)
 
