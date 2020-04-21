@@ -1,0 +1,46 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.3in]{geometry}
+\usepackage{hyperref}
+%---------------------------------------
+\title{Basic Time-Series}
+\author{Pramod Duvvuri}
+\date{April 20, 2020}
+\begin{document}
+	\maketitle
+	The below notes are written to accompany the book \textit{Forecasting: Principles and Practice} by \textbf{Rob J Hyndman and George Athanasopoulo}, one should be familiar with the basics of statistical concepts. One should also be familiar with Regression. The language of choice is \textbf{R} and the IDE is RStudio and we shall be using the \textit{ggplot2} package of the \textit{tidyverse} to plot, analyze and draw conclusions from the data we have.
+	\begin{enumerate}
+	\item Mains goals of forecasting
+	\item Types of forecasting models
+	\begin{enumerate}
+		\item Explanatory models (Prediction using features)
+		\item Forecasting models (Prediction using Lag values)
+		\item Mixed models (Combination of the above two models)
+	\end{enumerate}
+     \item Basic Steps in a forecasting task
+     \item Time-Series Graphics
+     \begin{enumerate}
+     	\item Time-plots
+     	\item Seasonal Plots \& Polar Seasonal Plots
+     	\item Seasonal Sub-series Plots
+     	\item Scatter Plots
+     	\item Lag Plots
+     	\item ACF/Correlogram Plots
+     \end{enumerate}
+      \item Components of a Time-series
+      \begin{enumerate}
+      	\item Trend
+      	\item Seasonal
+      	\item Cyclic
+      	\item Error
+      \end{enumerate}
+       \item White noise (ACF Plot to confirm)
+       \item Simple Forecasting Techniques
+       \begin{enumerate}
+       	\item Average method
+       	\item Naive method
+       	\item Seasonal Naive method
+       	\item Drift method
+       \end{enumerate}
+	\end{enumerate}
+\end{document}	
